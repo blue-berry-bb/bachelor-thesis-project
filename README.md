@@ -34,7 +34,7 @@ The backend follows a monolithic architecture implementation with the key compon
 - SQL queries are executed between the backend and PostgreSQL database.
 - Java File API is used for file storage and retrieval.
 
-Plagiarism analysis can be time-consuming for large document collections, so the processing progress is transmitted to the web interface in real time. To implement this functionality, various technical mechanisms were explored, including polling, WebSockets, and Server-Sent Events (SSE), as illustrated in the communication diagram below. SSE proved to be the most efficient solution as it enables unidirectional communication where the server sends progress directly to the client without the client having to make repeated requests, saving resources and simplifying implementation.
+Plagiarism analysis can be time-consuming for large document collections, so the processing progress is transmitted to the web interface in real time. To implement this functionality, various technical mechanisms were explored, including polling, WebSockets, and SSE, as illustrated in the communication diagram below. SSE proved to be the most efficient solution as it enables unidirectional communication where the server sends progress directly to the client without the client having to make repeated requests, saving resources and simplifying implementation.
 
 <img src="media/polling_sse_websockets.png" alt="tech stack" width="600">
 
