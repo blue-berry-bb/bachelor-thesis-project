@@ -6,7 +6,7 @@ This repository provides an overview of my **bachelor thesis project**, which fo
 
 *Note: The legal analysis concerning General Data Protection Regulation (GDPR) compliance and pseudonymized document storage is not included in this repository. But below you can find a graphic illustrating the difference between personal, pseudonymized and anonymized data to illustrate the difference*
 
-<img src="media/personal_data_pseudonym_anonym.png" alt="personal, pseudonymized and anonymized data" width="500">
+<img src="media/personal_data_pseudonym_anonym.png" alt="personal, pseudonymized and anonymized data" width="700">
 
 ## Technical Documentation
 The plagiarism checking software prototype follows a monolithic architecture for the core system, complemented by a small microservice for specialized calculations. This design ensures simplicity, maintainability, and allows for future scalability. The system consists of a frontend, backend, data storage, and a microservice component for computational tasks. Below is an overview of the key technologies used, along with a graphic for better visualization.
@@ -32,7 +32,7 @@ The backend follows a monolithic architecture implementation with the key compon
 - SQL queries are executed between the backend and PostgreSQL database.
 - Java File API is used for file storage and retrieval.
 
-<img src="media/tech_stack.png" alt="tech stack" width="500">
+<img src="media/tech_stack.png" alt="tech stack" width="600">
 
 ### Data management: database schema and file system
 The system uses PostgreSQL as a relational database to store structured data, including file metadata, user information, and role-based access control. However, documents are not stored directly in the database since relational databases are not optimized for large file storage. Instead, a dedicated file system manages document storage in an organized directory structure, while file paths and metadata are maintained in the database. This separation enhances performance and security, particularly in handling pseudonymized personal data, where sensitive information is managed through a separate mapping in the tables.
