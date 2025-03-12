@@ -60,17 +60,17 @@ This section provides a visual overview of the plagiarism-checking software prot
 ### User login and registration
 Simple and intuitive GUI for login and registration.
 
-<img src="media/register.png" alt="tech stack" width="400" style="margin-right: 15px;"><img src="media/login.png" alt="tech stack" width="400">
+<img src="media/register.png" alt="register GUI" width="400" style="margin-right: 15px;"><img src="media/login.png" alt="login GUI" width="400">
 
 ### Profile
 The profile page provides an overview of previously processed exercise collections, displaying their status as either "PENDING" (under review) or "DONE" (completed). Users can track the progress percentage, view results, or delete collections. Additionally, new ZIP files can be uploaded via drag & drop or file selection trough the file browser of the corresponding OS.
 
-<img src="media/profile.png" alt="tech stack" width="900">
+<img src="media/profile.png" alt="profile GUI" width="900">
 
-### Result
+### Results Overview
 The results page displays the name and creation date of the uploaded archive along with the plagiarism analysis results. Each document is compared against others, generating a similarity score between 0 (no match) and 1 (identical match). The results are visually grouped into collapsible lists, categorized as critical, high, moderate, or low similarity, providing a clear overview.
 
-<img src="media/results.png" alt="tech stack" width="900">
+<img src="media/results.png" alt="results GUI" width="900">
 
 ### Media License
 *All images, screenshots, and graphics in the **`media/`** folder are a copyright of the owner of this repository, [2025].
