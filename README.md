@@ -60,7 +60,7 @@ This section provides a visual overview of the plagiarism-checking software prot
 ### User login and registration
 Simple and intuitive GUI for login and registration.
 
-<img src="media/register.png" alt="register GUI" width="400" style="margin-right: 15px;"><img src="media/login.png" alt="login GUI" width="400">
+<img src="media/register.png" alt="register GUI" width="400">&nbsp;&nbsp;&nbsp;<img src="media/login.png" alt="login GUI" width="400">
 
 ### Profile
 The profile page provides an overview of previously processed exercise collections, displaying their status as either "PENDING" (under review) or "DONE" (completed). Users can track the progress percentage, view results, or delete collections. Additionally, new ZIP files can be uploaded via drag & drop or file selection trough the file browser of the corresponding OS.
