@@ -25,6 +25,8 @@ The backend follows a monolithic architecture implementation with the key compon
 - **Spring Data JPA & Hibernate**: Handles database interactions in an object-oriented way.
 - **Python Microservice**: A lightweight service responsible for performing plagiarism-checking and calculations.
 
+<img src="media/tech_stack.png" alt="tech stack" width="600"><br>
+
 **System Communication**<br>
 - The frontend communicates with the backend via **REST API (JSON)**.
 - **SSE** provides **real-time processing updates** from the backend to the frontend.
@@ -32,7 +34,9 @@ The backend follows a monolithic architecture implementation with the key compon
 - SQL queries are executed between the backend and PostgreSQL database.
 - Java File API is used for file storage and retrieval.
 
-<img src="media/tech_stack.png" alt="tech stack" width="600">
+Plagiarism analysis can be time-consuming for large document collections, so the processing progress is transmitted to the web interface in real time. To implement this functionality, various technical mechanisms were explored, including polling, WebSockets, and Server-Sent Events (SSE), as illustrated in the communication diagram below. SSE proved to be the most efficient solution as it enables unidirectional communication where the server sends progress directly to the client without the client having to make repeated requests, saving resources and simplifying implementation.
+
+<img src="media/polling_sse_websockets.png" alt="tech stack" width="600">
 
 ### Data management: database schema and file system
 The system uses PostgreSQL as a relational database to store structured data, including file metadata, user information, and role-based access control. However, documents are not stored directly in the database since relational databases are not optimized for large file storage. Instead, a dedicated file system manages document storage in an organized directory structure, while file paths and metadata are maintained in the database. This separation enhances performance and security, particularly in handling pseudonymized personal data, where sensitive information is managed through a separate mapping in the tables.
