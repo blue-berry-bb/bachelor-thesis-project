@@ -1,5 +1,5 @@
 # bachelor-thesis-project
-:exclamation: **Disclaimer**: *For privacy reasons, the source code and full written thesis are not publicly available. However, feel free to contact me if you'd like more details or a demonstration.*
+:warning: **Disclaimer**: *For privacy reasons, the source code and full written thesis are not publicly available. However, feel free to contact me if you'd like more details or a demonstration.*
 
 ## Introduction
 This repository provides an overview of my **bachelor thesis project**, which focuses on the development of a **plagiarism-checking software prototype**. While the full implementation remains private, this documentation outlines the **core technologies**, **database schema**, and **real-time processing updates** using **Server-Sent Events (SSE)**. To give a better understanding of the system, I have also included **screenshots** showcasing the application's interface and key functionalities.
