@@ -4,14 +4,12 @@
 ## Introduction
 This repository provides an overview of my **bachelor thesis project**, which focuses on the development of a **plagiarism-checking software prototype**. While the full implementation remains private, this documentation outlines the **core technologies**, **database schema**, and **real-time processing updates** using **Server-Sent Events (SSE)**. To give a better understanding of the system, I have also included **screenshots** showcasing the application's interface and key functionalities.
 
-*Note: The legal analysis concerning GDPR compliance and pseudonymized document storage is not included in this repository. But below you can find a graphic illustrating the difference between personal, pseudonymized and anonymized data to illustrate the difference*
+*Note: The legal analysis concerning General Data Protection Regulation (GDPR) compliance and pseudonymized document storage is not included in this repository. But below you can find a graphic illustrating the difference between personal, pseudonymized and anonymized data to illustrate the difference*
 
-<img src="media/pseudonymisiert_anonymisiert.png" alt="personal, pseudonymized and anonymized data" width="500">
+<img src="media/personal_data_pseudonym_anonym.png" alt="personal, pseudonymized and anonymized data" width="500">
 
 ## Technical Documentation
-The plagiarism checking software prototype follows a monolithic architecture for the core system, with a small microservice used for specialized calculations. This design ensures simplicity and maintainability while allowing for future scalability.
-
-The system consists of a frontend, backend, data storage, and a microservice component for computational tasks. Below is an overview of the key technologies used including a graphic for better visualization.
+The plagiarism checking software prototype follows a monolithic architecture for the core system, complemented by a small microservice for specialized calculations. This design ensures simplicity, maintainability, and allows for future scalability. The system consists of a frontend, backend, data storage, and a microservice component for computational tasks. Below is an overview of the key technologies used, along with a graphic for better visualization.
 
 ### Tech Stack
 **Frontend**<br>
@@ -37,7 +35,7 @@ The backend follows a monolithic architecture implementation with the key compon
 <img src="media/tech_stack.png" alt="tech stack" width="500">
 
 ### Data management: database schema and file system
-The system uses PostgreSQL as a relational database to store structured data, including metadata, user information, and role-based access control. However, documents are not stored directly in the database since relational databases are not optimized for large file storage. Instead, a dedicated file system manages document storage in an organized directory structure, while file paths and metadata are maintained in the database. This separation enhances performance and security, particularly in handling pseudonymized personal data, where sensitive information is managed through a separate mapping in the tables.
+The system uses PostgreSQL as a relational database to store structured data, including file metadata, user information, and role-based access control. However, documents are not stored directly in the database since relational databases are not optimized for large file storage. Instead, a dedicated file system manages document storage in an organized directory structure, while file paths and metadata are maintained in the database. This separation enhances performance and security, particularly in handling pseudonymized personal data, where sensitive information is managed through a separate mapping in the tables.
 
 <img src="media/db_schema_cropped.png" alt="realtional database schema" width="400">
 
@@ -63,7 +61,7 @@ Simple and intuitive GUI for login and registration.
 <img src="media/register.png" alt="register GUI" width="400">&nbsp;&nbsp;&nbsp;<img src="media/login.png" alt="login GUI" width="400">
 
 ### Profile
-The profile page provides an overview of previously processed exercise collections, displaying their status as either "PENDING" (under review) or "DONE" (completed). Users can track the progress percentage, view results, or delete collections. Additionally, new ZIP files can be uploaded via drag & drop or file selection trough the file browser of the corresponding OS.
+The profile page provides an overview of previously processed exercise collections, displaying their status as either *PENDING* (under review) or *DONE* (completed). Users can track the progress percentage, view results, or delete collections. Additionally, new ZIP files can be uploaded via drag & drop or file selection trough the file browser of the corresponding OS.
 
 <img src="media/profile.png" alt="profile GUI" width="100%">
 
