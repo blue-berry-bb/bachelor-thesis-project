@@ -77,4 +77,4 @@ The results page displays the name and creation date of the uploaded archive alo
 ### Media License
 *All images, screenshots, and graphics in the **`media/`** folder are a copyright of the owner of this repository, [2025].
 They are licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), meaning you can use, share, and adapt the media **as long as you provide appropriate credit** to this repository.
-Please make sure to reference the repository as the source.*x
+Please make sure to reference the repository as the source.*
